@@ -1,0 +1,199 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #243047;
+}
+
+.topbar {
+  background: #233b70;
+  color: white;
+  padding: 24px 6%;
+}
+
+.topbar h1 {
+  margin: 0 0 8px;
+}
+
+.topbar p {
+  margin: 0;
+  color: #dce6ff;
+}
+
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: 28px auto;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.summary-card,
+.panel {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 14px rgba(30, 50, 90, 0.07);
+}
+
+.summary-card p {
+  color: #65728a;
+  margin-top: 0;
+}
+
+.summary-card h2 {
+  margin-bottom: 0;
+  overflow-wrap: anywhere;
+}
+
+.balance-card {
+  background: #e7efff;
+}
+
+.panel {
+  margin-bottom: 24px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 21px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccd4e2;
+  border-radius: 7px;
+  background: white;
+  font: inherit;
+  margin-bottom: 7px;
+}
+
+button {
+  padding: 11px 16px;
+  background: #315acb;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #2448aa;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#message {
+  margin-bottom: 0;
+}
+
+.error {
+  color: #b42318;
+}
+
+.success {
+  color: #16803d;
+}
+
+.budget-form {
+  max-width: 450px;
+}
+
+#budgetProgress {
+  display: block;
+  width: 100%;
+  height: 20px;
+  margin-top: 12px;
+}
+
+.chart-container {
+  position: relative;
+  max-width: 450px;
+  margin: auto;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+th,
+td {
+  padding: 13px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaf0;
+}
+
+th {
+  background: #f5f7fb;
+}
+
+.income-text {
+  color: #16803d;
+  font-weight: bold;
+}
+
+.expense-text {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.action-button {
+  padding: 7px 10px;
+  margin: 2px;
+  font-size: 12px;
+}
+
+.delete-button {
+  background: #c0392b;
+}
+
+@media (max-width: 700px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .topbar {
+    padding: 20px 5%;
+  }
+
+  .summary-card,
+  .panel {
+    padding: 16px;
+  }
+}
