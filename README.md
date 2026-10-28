@@ -137,7 +137,7 @@ This project is intended as a local learning prototype. It does not currently in
 
 ## Author
 
-YOUR NAME
+Shahana Kishorekumar
 
 ## License
 
